@@ -1,0 +1,32 @@
+<publishData>
+  <publishTarget publishUrl="D:\Web\Desarrollos\TechnicalTaskRelease\WCF\">
+    <file relUrl="WebTracker.cs" publishTime="01/23/2025 00:27:07" />
+    <file relUrl="bin/EntityFramework.xml" publishTime="06/16/2024 14:46:20" />
+    <file relUrl="Properties/AssemblyInfo.cs" publishTime="01/22/2025 20:42:35" />
+    <file relUrl="NorthwindEntities.Context.cs" publishTime="01/23/2025 00:27:00" />
+    <file relUrl="bin/EntityFramework.SqlServer.dll" publishTime="06/16/2024 14:47:02" />
+    <file relUrl="Models/Order.cs" publishTime="01/22/2025 20:48:24" />
+    <file relUrl="TechnicalTaskWcf.csproj" publishTime="01/23/2025 10:30:15" />
+    <file relUrl="NorthwindEntities.edmx" publishTime="01/23/2025 00:26:54" />
+    <file relUrl="Customers.cs" publishTime="01/23/2025 00:27:07" />
+    <file relUrl="NorthwindEntities.Designer.cs" publishTime="01/23/2025 00:27:07" />
+    <file relUrl="bin/TechincalTaskWcf.dll.config" publishTime="01/23/2025 10:44:01" />
+    <file relUrl="NorthwindEntities.tt" publishTime="01/23/2025 00:26:53" />
+    <file relUrl="packages.config" publishTime="01/22/2025 21:05:56" />
+    <file relUrl="NorthwindEntities.Context.tt" publishTime="01/23/2025 00:26:53" />
+    <file relUrl="bin/TechincalTaskWcf.dll" publishTime="01/23/2025 10:44:10" />
+    <file relUrl="CustomerService.cs" publishTime="01/23/2025 10:28:21" />
+    <file relUrl="bin/TechincalTaskWcf.pdb" publishTime="01/23/2025 10:44:10" />
+    <file relUrl="ICustomerService.cs" publishTime="01/23/2025 00:29:42" />
+    <file relUrl="Models/Customer.cs" publishTime="01/22/2025 21:02:13" />
+    <file relUrl="TechnicalTaskWcf.CustomerService.svc" publishTime="01/23/2025 10:44:38" />
+    <file relUrl="bin/EntityFramework.SqlServer.xml" publishTime="06/16/2024 14:47:02" />
+    <file relUrl="NorthwindEntities.cs" publishTime="01/23/2025 00:27:07" />
+    <file relUrl="Orders.cs" publishTime="01/23/2025 00:27:07" />
+    <file relUrl="App.config" publishTime="01/23/2025 10:44:01" />
+    <file relUrl="Web.config" publishTime="01/23/2025 10:44:01" />
+    <file relUrl="TechnicalTaskWcf.csproj.user" publishTime="01/23/2025 10:41:48" />
+    <file relUrl="bin/EntityFramework.dll" publishTime="06/16/2024 14:46:24" />
+    <file relUrl="NorthwindEntities.edmx.diagram" publishTime="01/23/2025 00:26:54" />
+  </publishTarget>
+</publishData>

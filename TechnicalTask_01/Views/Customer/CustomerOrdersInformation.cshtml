@@ -1,0 +1,23 @@
+﻿@model List<Order>
+
+<div class="container">
+    <h2>Orders Information</h2>
+    <div id="ordersGrid"></div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#ordersGrid").kendoGrid({
+            dataSource: {
+                data: @Html.Raw(Json.Serialize(Model)),
+                schema: { model: { fields: { OrderId: { type: "number" }, CustomerId: { type: "string" }, OrderDate: { type: "date" }, ShippedDate: { type: "date" } } } }
+            },
+            columns: [
+                { field: "OrderId", title: "Order ID" },
+                { field: "CustomerId", title: "Customer ID" },
+                { field: "OrderDate", title: "Order Date", format: "{0:yyyy-MM-dd}" },
+                { field: "ShippedDate", title: "Shipped Date", format: "{0:yyyy-MM-dd}" }
+            ]
+        });
+    });
+</script>

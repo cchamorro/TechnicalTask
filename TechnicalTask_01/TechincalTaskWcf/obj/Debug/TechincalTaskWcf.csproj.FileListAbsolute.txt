@@ -1,0 +1,7 @@
+D:\Web\Desarrollos\TechnicalTask_01\TechincalTaskWcf\obj\Debug\TechincalTaskWcf.csproj.AssemblyReference.cache
+D:\Web\Desarrollos\TechnicalTask_01\TechincalTaskWcf\obj\Debug\TechincalTaskWcf.csproj.CoreCompileInputs.cache
+D:\Web\Desarrollos\TechnicalTask_01\TechincalTaskWcf\bin\Debug\TechincalTaskWcf.dll.config
+D:\Web\Desarrollos\TechnicalTask_01\TechincalTaskWcf\bin\Debug\TechincalTaskWcf.dll
+D:\Web\Desarrollos\TechnicalTask_01\TechincalTaskWcf\bin\Debug\TechincalTaskWcf.pdb
+D:\Web\Desarrollos\TechnicalTask_01\TechincalTaskWcf\obj\Debug\TechincalTaskWcf.dll
+D:\Web\Desarrollos\TechnicalTask_01\TechincalTaskWcf\obj\Debug\TechincalTaskWcf.pdb
