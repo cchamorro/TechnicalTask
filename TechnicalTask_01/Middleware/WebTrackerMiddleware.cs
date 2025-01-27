@@ -6,6 +6,7 @@ using TechnicalTask_01.Models;
 using Microsoft.Owin;
 using ServiceCustomerWCF;
 using System.ServiceModel;
+using Microsoft.AspNetCore.Http.Extensions;
 
 namespace TechnicalTask_01.Middleware
 {
@@ -23,11 +24,11 @@ namespace TechnicalTask_01.Middleware
         {
             CustomerServiceClient? client = new CustomerServiceClient(
             new BasicHttpBinding(),
-            new EndpointAddress("http://localhost/TechnicalTaskWcf/TechnicalTaskWcf.CustomerService.svc"));
+            new EndpointAddress("http://cchamorro/technicaltaskwcf/TechnicalTaskWcf.CustomerService.svc"));
 
             await client.PutTrackingAsync(
-                context.GetServerVariable("url"),
-                context.GetServerVariable("remote_addr"),
+                context.Request.GetDisplayUrl(),
+                context.GetServerVariable("HTTP_X_FORWARDED_FOR"),
                 DateTime.Now
                 );
 

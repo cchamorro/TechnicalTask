@@ -1,8 +1,21 @@
 ﻿@model List<Order>
 
 <div class="container">
-    <h2>Orders Information</h2>
-    <div id="ordersGrid"></div>
+    <h2>Información de Órdenes</h2>
+    <a href="@Url.Action("CustomersByCountry", "Customer")" class="btn btn-primary">
+        <i class="fas fa-arrow-left"></i> Regresar
+    </a>
+    <br />
+</div>
+
+@if (Model == null || !Model.Any())
+{
+    <p>No hay datos para mostrar.</p>
+}
+else
+{
+<div class="container">
+     <div id="ordersGrid"></div>
 </div>
 
 <script>
@@ -12,12 +25,24 @@
                 data: @Html.Raw(Json.Serialize(Model)),
                 schema: { model: { fields: { OrderId: { type: "number" }, CustomerId: { type: "string" }, OrderDate: { type: "date" }, ShippedDate: { type: "date" } } } }
             },
+                filterable: true,
             columns: [
-                { field: "OrderId", title: "Order ID" },
-                { field: "CustomerId", title: "Customer ID" },
-                { field: "OrderDate", title: "Order Date", format: "{0:yyyy-MM-dd}" },
-                { field: "ShippedDate", title: "Shipped Date", format: "{0:yyyy-MM-dd}" }
-            ]
+                { field: "orderId", title: "Número de Orden" },
+                { field: "customerId", title: "ID Cliente" },
+                    {
+                        field: "orderDate",
+                        title: "Fecha de Orden",
+                        template: "#= kendo.toString(kendo.parseDate(orderDate), 'dd/MM/yyyy') #"
+                    },
+                    {
+                        field: "shippedDate",
+                        title: "Fecha de Entrega",
+                        template: "#= kendo.toString(kendo.parseDate(shippedDate), 'dd/MM/yyyy') #"
+                    }
+                ],
+                headerAttributes: { style: "font-weight: bold;" }
         });
     });
 </script>
+
+}

@@ -3,32 +3,46 @@
 }
 
 <div class="container">
-    <h2>Search Customers By Country</h2>
-    <input type="text" id="country" class="form-control" placeholder="Enter Country" />
-    <button id="searchBtn" class="btn btn-primary">Search</button>
+    <h2>Clientes por País</h2>
+    <input type="text" id="country" class="form-control" placeholder="Ingrese el País" />
+    <button id="searchBtn" class="btn btn-primary">Buscar</button>
 
+    <div id="noDataMessage" class="alert alert-warning mt-3" style="display: none;">
+        No se encontraron resultados para el país especificado.
+    </div>
+    <br />
     <div id="customersGrid"></div>
 </div>
 
 <script>
-    $(document).ready(function () {
-        $("#searchBtn").click(function () {
-            var country = $("#country").val();
-            $.post('/Customer/SearchCustomers', { country: country }, function (data) {
-                $("#customersGrid").kendoGrid({
-                    dataSource: {
-                        data: data,
-                        schema: { model: { fields: { CustomerId: { type: "string" }, CompanyName: { type: "string" }, ContactName: { type: "string" }, Phone: { type: "string" }, Fax: { type: "string" } } } }
-                    },
-                    columns: [
-                        { field: "customerId", title: "Customer ID", template: "<a href='/Customer/CustomerOrdersInformation?customerId=#=customerId#'>#=customerId#</a>" },
-                        { field: "companyName", title: "Company Name" },
-                        { field: "contactName", title: "Contact Name" },
-                        { field: "phone", title: "Phone Number" },
-                        { field: "fax", title: "Fax Number" }
-                    ]
+        $(document).ready(function () {
+            $("#searchBtn").click(function () {
+                var country = $("#country").val();
+                $.post('SearchCustomers', { country: country }, function (data) {
+                    $("#noDataMessage").hide();
+
+                    if (data.length === 0) {
+                        // Mostrar mensaje si no hay datos
+                        $("#noDataMessage").show();
+                        $("#customersGrid").empty(); // Limpiar el grid si no hay datos
+                    } else {
+                        $("#customersGrid").kendoGrid({
+                            dataSource: {
+                                data: data,
+                                schema: { model: { fields: { CustomerId: { type: "string" }, CompanyName: { type: "string" }, ContactName: { type: "string" }, Phone: { type: "string" }, Fax: { type: "string" } } } }
+                            },
+                            filterable: true,
+                            columns: [
+                                { field: "customerId", title: "ID Cliente", template: "<a href='/Customer/CustomerOrdersInformation?customerId=#=customerId#'>#=customerId#</a>" },
+                                { field: "companyName", title: "Nombre de Empresa" },
+                                { field: "contactName", title: "Nombre de Contacto" },
+                                { field: "phone", title: "Número de Teléfono" },
+                                { field: "fax", title: "Número de Fax" }
+                            ],
+                            headerAttributes: { style: "font-weight: bold;" }
+                        });
+                    }
                 });
             });
         });
-    });
 </script>

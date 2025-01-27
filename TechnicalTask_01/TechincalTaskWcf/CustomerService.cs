@@ -30,13 +30,14 @@ namespace TechnicalTaskWcf
 
         public List<Models.Order> GetOrdersByCustomerId(string customerId)
         {
-            var result = (from a in db.Orders
-                          where a.Customers.CustomerID == customerId
-                          select new Models.Order { 
-                              CustomerId = a.Customers.CustomerID, 
-                              OrderDate = Convert.ToDateTime( a.OrderDate), 
-                              OrderId = a.OrderID, 
-                              ShippedDate = Convert.ToDateTime( a.ShippedDate) 
+            var result = (from o in db.Orders
+                          where o.Customers.CustomerID == customerId
+                          select new Models.Order
+                          {
+                              CustomerId = customerId,
+                              OrderDate = o.OrderDate,
+                              OrderId = o.OrderID,
+                              ShippedDate = o.ShippedDate,
                           }).ToList();
 
             return result;

@@ -10,3 +10,15 @@ D:\Web\Desarrollos\TechnicalTask_01\TechincalTaskWcf\bin\Debug\EntityFramework.S
 D:\Web\Desarrollos\TechnicalTask_01\TechincalTaskWcf\bin\Debug\EntityFramework.xml
 D:\Web\Desarrollos\TechnicalTask_01\TechincalTaskWcf\bin\Debug\EntityFramework.SqlServer.xml
 D:\Web\Desarrollos\TechnicalTask_01\TechincalTaskWcf\obj\Debug\TechnicalTaskWcf.csproj.CopyComplete
+D:\GitHub\TechnicalTask\TechnicalTask_01\TechincalTaskWcf\bin\Debug\TechincalTaskWcf.dll.config
+D:\GitHub\TechnicalTask\TechnicalTask_01\TechincalTaskWcf\bin\Debug\TechincalTaskWcf.dll
+D:\GitHub\TechnicalTask\TechnicalTask_01\TechincalTaskWcf\bin\Debug\TechincalTaskWcf.pdb
+D:\GitHub\TechnicalTask\TechnicalTask_01\TechincalTaskWcf\bin\Debug\EntityFramework.dll
+D:\GitHub\TechnicalTask\TechnicalTask_01\TechincalTaskWcf\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitHub\TechnicalTask\TechnicalTask_01\TechincalTaskWcf\bin\Debug\EntityFramework.xml
+D:\GitHub\TechnicalTask\TechnicalTask_01\TechincalTaskWcf\bin\Debug\EntityFramework.SqlServer.xml
+D:\GitHub\TechnicalTask\TechnicalTask_01\TechincalTaskWcf\obj\Debug\TechnicalTaskWcf.csproj.AssemblyReference.cache
+D:\GitHub\TechnicalTask\TechnicalTask_01\TechincalTaskWcf\obj\Debug\TechnicalTaskWcf.csproj.CoreCompileInputs.cache
+D:\GitHub\TechnicalTask\TechnicalTask_01\TechincalTaskWcf\obj\Debug\TechnicalTaskWcf.csproj.CopyComplete
+D:\GitHub\TechnicalTask\TechnicalTask_01\TechincalTaskWcf\obj\Debug\TechincalTaskWcf.dll
+D:\GitHub\TechnicalTask\TechnicalTask_01\TechincalTaskWcf\obj\Debug\TechincalTaskWcf.pdb

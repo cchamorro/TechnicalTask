@@ -13,7 +13,7 @@ namespace TechnicalTask_01.Controllers
     {
         CustomerServiceClient? client = new CustomerServiceClient(
             new BasicHttpBinding(), 
-            new EndpointAddress("http://localhost/TechnicalTaskWcf/TechnicalTaskWcf.CustomerService.svc"));
+            new EndpointAddress("http://cchamorro/technicaltaskwcf/TechnicalTaskWcf.CustomerService.svc"));
 
         public IActionResult CustomersByCountry()
         {
@@ -32,7 +32,18 @@ namespace TechnicalTask_01.Controllers
         public IActionResult CustomerOrdersInformation(string customerId)
         {
             var orders = client.GetOrdersByCustomerId(customerId);
-            return View(orders);
+
+            List<Models.Order> ordersList = orders
+                .Select(o => new Models.Order
+                {
+                    CustomerId = o.CustomerId,
+                    OrderDate = o.OrderDate,
+                    OrderId = o.OrderId,
+                    ShippedDate = o.ShippedDate,
+                })
+                .ToList();
+
+            return View(ordersList);
         }
 
         public IActionResult Error()

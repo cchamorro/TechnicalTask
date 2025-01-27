@@ -6401,11 +6401,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Web\\Desarrollos\\TechnicalTask_01\\TechnicalTask_01.csproj",
+      "projectUniqueName": "D:\\GitHub\\TechnicalTask\\TechnicalTask_01\\TechnicalTask_01.csproj",
       "projectName": "TechnicalTask_01",
-      "projectPath": "D:\\Web\\Desarrollos\\TechnicalTask_01\\TechnicalTask_01.csproj",
+      "projectPath": "D:\\GitHub\\TechnicalTask\\TechnicalTask_01\\TechnicalTask_01.csproj",
       "packagesPath": "C:\\Users\\cdcha\\.nuget\\packages\\",
-      "outputPath": "D:\\Web\\Desarrollos\\TechnicalTask_01\\obj\\",
+      "outputPath": "D:\\GitHub\\TechnicalTask\\TechnicalTask_01\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

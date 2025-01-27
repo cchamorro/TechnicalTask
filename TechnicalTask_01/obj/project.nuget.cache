@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xuPdWXgqp7J6cEipA46pWo67XHrGHBlGLtNxFvH10gQtrElkD7SoZhGO7r0KBHFfHcuRyygXEiplf5b8wU8GaQ==",
+  "dgSpecHash": "NNAjWmErrgDqwqWqVlJxoER+Gd2tduFtEzlWhGzOBBL8JhPnLnPbBhiaolywKaQOiFqf95qiZw4mN4QulzkG3w==",
   "success": true,
-  "projectFilePath": "D:\\Web\\Desarrollos\\TechnicalTask_01\\TechnicalTask_01.csproj",
+  "projectFilePath": "D:\\GitHub\\TechnicalTask\\TechnicalTask_01\\TechnicalTask_01.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cdcha\\.nuget\\packages\\bootstrap\\5.3.3\\bootstrap.5.3.3.nupkg.sha512",
     "C:\\Users\\cdcha\\.nuget\\packages\\entityframework\\6.5.1\\entityframework.6.5.1.nupkg.sha512",
