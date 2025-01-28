@@ -1,6 +1,6 @@
 D:\GitHub\TechnicalTask\TechnicalTask_01\obj\Release\net7.0\PubTmp\Out\TechnicalTask_01.exe
 D:\GitHub\TechnicalTask\TechnicalTask_01\obj\Release\net7.0\PubTmp\Out\TechincalTaskWcf\App.config
-D:\GitHub\TechnicalTask\TechnicalTask_01\obj\Release\net7.0\PubTmp\Out\TechincalTaskWcf\bin\Debug\TechincalTaskWcf.dll.config
+D:\GitHub\TechnicalTask\TechnicalTask_01\obj\Release\net7.0\PubTmp\Out\TechincalTaskWcf\bin\Debug\TechnicalTaskWcf.dll.config
 D:\GitHub\TechnicalTask\TechnicalTask_01\obj\Release\net7.0\PubTmp\Out\TechincalTaskWcf\packages.config
 D:\GitHub\TechnicalTask\TechnicalTask_01\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
 D:\GitHub\TechnicalTask\TechnicalTask_01\obj\Release\net7.0\PubTmp\Out\appsettings.json

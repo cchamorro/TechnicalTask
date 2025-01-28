@@ -4,7 +4,6 @@ using System.Threading.Tasks;
 using static System.Net.Mime.MediaTypeNames;
 using TechnicalTask_01.Models;
 using Microsoft.Owin;
-using ServiceCustomerWCF;
 using System.ServiceModel;
 using Microsoft.AspNetCore.Http.Extensions;
 
@@ -22,15 +21,14 @@ namespace TechnicalTask_01.Middleware
 
         public async Task Invoke(HttpContext context)
         {
-            CustomerServiceClient? client = new CustomerServiceClient(
-            new BasicHttpBinding(),
-            new EndpointAddress("http://cchamorro/technicaltaskwcf/TechnicalTaskWcf.CustomerService.svc"));
+            string sourceIP = context.GetServerVariable("HTTP_X_FORWARDED_FOR") ?? string.Empty;
 
-            await client.PutTrackingAsync(
-                context.Request.GetDisplayUrl(),
-                context.GetServerVariable("HTTP_X_FORWARDED_FOR"),
-                DateTime.Now
-                );
+            new Services.ServicioWCF().PutTracker(
+                new WebTrack { 
+                    URLRequest = context.Request.GetDisplayUrl().ToString(), 
+                    SourceIp = sourceIP, 
+                    TimeOfAction = DateTime.Now
+                }).Wait();
 
             await _next(context);
         }

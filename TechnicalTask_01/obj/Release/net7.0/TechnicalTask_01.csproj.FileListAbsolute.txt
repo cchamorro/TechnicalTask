@@ -7,7 +7,6 @@ D:\GitHub\TechnicalTask\TechnicalTask_01\obj\Release\net7.0\TechnicalTask_01.Mvc
 D:\GitHub\TechnicalTask\TechnicalTask_01\obj\Release\net7.0\TechnicalTask_01.RazorAssemblyInfo.cache
 D:\GitHub\TechnicalTask\TechnicalTask_01\obj\Release\net7.0\TechnicalTask_01.RazorAssemblyInfo.cs
 D:\GitHub\TechnicalTask\TechnicalTask_01\bin\Release\net7.0\TechincalTaskWcf\App.config
-D:\GitHub\TechnicalTask\TechnicalTask_01\bin\Release\net7.0\TechincalTaskWcf\bin\Debug\TechincalTaskWcf.dll.config
 D:\GitHub\TechnicalTask\TechnicalTask_01\bin\Release\net7.0\TechincalTaskWcf\packages.config
 D:\GitHub\TechnicalTask\TechnicalTask_01\bin\Release\net7.0\appsettings.Development.json
 D:\GitHub\TechnicalTask\TechnicalTask_01\bin\Release\net7.0\appsettings.json
@@ -99,3 +98,4 @@ D:\GitHub\TechnicalTask\TechnicalTask_01\obj\Release\net7.0\refint\TechnicalTask
 D:\GitHub\TechnicalTask\TechnicalTask_01\obj\Release\net7.0\TechnicalTask_01.pdb
 D:\GitHub\TechnicalTask\TechnicalTask_01\obj\Release\net7.0\TechnicalTask_01.genruntimeconfig.cache
 D:\GitHub\TechnicalTask\TechnicalTask_01\obj\Release\net7.0\ref\TechnicalTask_01.dll
+D:\GitHub\TechnicalTask\TechnicalTask_01\bin\Release\net7.0\TechincalTaskWcf\bin\Debug\TechnicalTaskWcf.dll.config

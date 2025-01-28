@@ -9,8 +9,8 @@
     <ProjectGuid>{5DF3EF17-4EF6-4A83-ACB7-387DE47D9F08}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TechincalTaskWcf</RootNamespace>
-    <AssemblyName>TechincalTaskWcf</AssemblyName>
+    <RootNamespace>TechnicalTaskWcf</RootNamespace>
+    <AssemblyName>TechnicalTaskWcf</AssemblyName>
     <ProjectTypeGuids>{3D9AD99F-2412-4246-B90B-4EAA41C64699};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <StartArguments>/client:"WcfTestClient.exe"</StartArguments>
     <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
@@ -57,13 +57,21 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\CustomerBLL.cs" />
+    <Compile Include="BLL\OrderBLL.cs" />
+    <Compile Include="BLL\WebTrackBLL.cs" />
     <Compile Include="Customers.cs">
       <DependentUpon>NorthwindEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="CustomerService.cs" />
+    <Compile Include="DAL\CustomerDAL.cs" />
+    <Compile Include="DAL\DataAccessLayer.cs" />
+    <Compile Include="DAL\OrderDAL.cs" />
+    <Compile Include="DAL\WebTrackDAL.cs" />
     <Compile Include="ICustomerService.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\WebTrack.cs" />
     <Compile Include="NorthwindEntities.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TechincalTaskWcf
+namespace TechnicalTaskWcf
 {
     using System;
     using System.Data.Entity;

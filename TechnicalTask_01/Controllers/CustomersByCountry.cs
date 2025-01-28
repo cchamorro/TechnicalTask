@@ -11,13 +11,8 @@ namespace TechnicalTask_01.Controllers
 {
     public class Customer : Controller
     {
-        CustomerServiceClient? client = new CustomerServiceClient(
-            new BasicHttpBinding(), 
-            new EndpointAddress("http://cchamorro/technicaltaskwcf/TechnicalTaskWcf.CustomerService.svc"));
-
         public IActionResult CustomersByCountry()
         {
-            //client = new CustomerServiceClient(new BasicHttpBinding(), new EndpointAddress(configuration.GetSection("ServiceURL").Value));
             return View();
 
         }
@@ -25,24 +20,13 @@ namespace TechnicalTask_01.Controllers
         [HttpPost]
         public JsonResult SearchCustomers(string country)
         {
-            var customers = client.GetCustomersByCountry(country);
+            var customers = new Services.ServicioWCF().GetCustomersByCountry(country);
             return Json(customers);
         }
 
         public IActionResult CustomerOrdersInformation(string customerId)
         {
-            var orders = client.GetOrdersByCustomerId(customerId);
-
-            List<Models.Order> ordersList = orders
-                .Select(o => new Models.Order
-                {
-                    CustomerId = o.CustomerId,
-                    OrderDate = o.OrderDate,
-                    OrderId = o.OrderId,
-                    ShippedDate = o.ShippedDate,
-                })
-                .ToList();
-
+            List<Models.Order> ordersList = new Services.ServicioWCF().GetOrdersByCustomerId(customerId);
             return View(ordersList);
         }
 

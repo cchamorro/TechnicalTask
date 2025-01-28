@@ -1,6 +1,6 @@
 ﻿namespace TechnicalTask_01.Models
 {
-    public class WebTracker
+    public class WebTrack
     {
         public int Id { get; set; }
         public string URLRequest { get; set; }

@@ -20,7 +20,7 @@
                 var country = $("#country").val();
                 $.post('SearchCustomers', { country: country }, function (data) {
                     $("#noDataMessage").hide();
-
+                    $("#customersGrid").empty();
                     if (data.length === 0) {
                         // Mostrar mensaje si no hay datos
                         $("#noDataMessage").show();
