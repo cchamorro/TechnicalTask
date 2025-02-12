@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace TechnicalTaskWcf.DAL
 {
+    /// <summary>
+    /// Clase de acceso a datos para los métodos de la tabla Customer
+    /// </summary>
     public class CustomerDAL : DataAccessLayer
     {
         public List<Models.Customer> GetCustomersByCountry(string country)

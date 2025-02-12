@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace TechnicalTaskWcf.DAL
 {
+    /// <summary>
+    /// Clase de acceso a datos para los métodos de la tabla WebTrack
+    /// </summary>
     public class WebTrackDAL : DataAccessLayer
     {
         public Boolean PutTracking(Models.WebTrack webTrack)

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace TechnicalTaskWcf.BLL
 {
-
+    /// <summary>
+    /// Clase de reglas de negocio para el objeto Order
+    /// </summary>
     public class OrderBLL
     {
         public List<Models.Order> GetOrdersByCustomerId(string customerId)

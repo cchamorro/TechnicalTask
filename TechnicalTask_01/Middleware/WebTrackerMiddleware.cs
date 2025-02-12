@@ -9,7 +9,9 @@ using Microsoft.AspNetCore.Http.Extensions;
 
 namespace TechnicalTask_01.Middleware
 {
-    // You may need to install the Microsoft.AspNetCore.Http.Abstractions package into your project
+    /// <summary>
+    /// Clase para gestionar solicitudes y respuestas en la canalización HTTP, para autenticación, registro de actividad o manejo de errores.
+    /// </summary>
     public class WebTrackerMiddleware 
     {
         private readonly RequestDelegate _next;

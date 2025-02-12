@@ -9,6 +9,9 @@ using TechnicalTaskWcf;
 
 namespace TechnicalTaskWcf
 {
+    /// <summary>
+    /// Clase de implementación del contrato ICustomerService para el servicio de datos que usa WCF
+    /// </summary>
     public class CustomerService : ICustomerService
     {
         public List<Models.Customer> GetCustomersByCountry(string country)

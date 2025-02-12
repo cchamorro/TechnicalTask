@@ -1,5 +1,8 @@
 ﻿namespace TechnicalTask_01.Models
 {
+    /// <summary>
+    /// Objeto de modelo de negocio correspondiente a la tabla Customers. 
+    /// </summary>
     public class Customer
     {
         public string CustomerId { get; set; }

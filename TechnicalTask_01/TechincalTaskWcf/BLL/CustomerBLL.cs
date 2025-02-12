@@ -7,6 +7,9 @@ using TechnicalTaskWcf;
 
 namespace TechnicalTaskWcf.BLL
 {
+    /// <summary>
+    /// Clase de reglas de negocio para el objeto Customer
+    /// </summary>
     public class CustomerBLL
     {
         public List<Models.Customer> GetCustomersByCountry(string country) 

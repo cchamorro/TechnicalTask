@@ -1,5 +1,8 @@
 ﻿namespace TechnicalTask_01.Models
 {
+    /// <summary>
+    /// Objeto de modelo de negocio correspondiente a la tabla WebTrack 
+    /// </summary>
     public class WebTrack
     {
         public int Id { get; set; }

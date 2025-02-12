@@ -3,6 +3,9 @@ using ServiceCustomerWCF;
 
 namespace TechnicalTask_01.Services
 {
+    /// <summary>
+    /// Clase singleton y factory para acceder a los métodos del servicio conectado que implementa WCF
+    /// </summary>
     public class ServicioWCF
     {
         CustomerServiceClient client = new CustomerServiceClient(

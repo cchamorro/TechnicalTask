@@ -9,12 +9,14 @@ using System.Configuration;
 
 namespace TechnicalTask_01.Controllers
 {
+    /// <summary>
+    /// Controlador de las vistas y modelo de Customers y Orders
+    /// </summary>
     public class Customer : Controller
     {
         public IActionResult CustomersByCountry()
         {
             return View();
-
         }
 
         [HttpPost]

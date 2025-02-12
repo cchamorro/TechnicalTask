@@ -4,6 +4,9 @@ using TechnicalTask_01.Models;
 
 namespace TechnicalTask_01.Controllers
 {
+    /// <summary>
+    /// Controlador de vistas y modelo de Home
+    /// </summary>
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

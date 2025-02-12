@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace TechnicalTaskWcf.DAL
 {
+    /// <summary>
+    /// Clase de acceso a datos para los métodos de la tabla Order
+    /// </summary>
     public class OrderDAL
     {
         public northwindEntities1 db = new northwindEntities1();
